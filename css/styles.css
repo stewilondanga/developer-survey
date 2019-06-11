@@ -1,4 +1,4 @@
-body {
+/*body {
   text-align: center;
   font-family: courier;
   background-image: url("../assets/image.jpeg");
@@ -20,6 +20,32 @@ body {
 .my_social a img {
   height: 1.5em;
 }
+
+body
+	background: #f0f2da
+
+textarea
+	resize: none
+
+.header
+	text-align: center
+	text-transform: uppercase
+	color: #9fc8c2
+	text-shadow: 2px 3px #8b8285
+
+.text-danger
+	color: 	#e3a8a4
+
+.btn-submit
+	background: #9fc8c2
+	border: 1px solid #9fc8c2
+	color: #8b8285
+	font-weight: bold
+
+.form
+	background: #fff
+	padding: 20px
+	border: 2px solid #f1d2cd
 
 .containers {
   width: 520px;
