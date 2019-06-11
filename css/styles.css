@@ -30,8 +30,9 @@ textarea {
 }
 
 .text-danger {
-	color: 	#e3a8a4
+  color: #e3a8a4;
 }
+
 /*.btn-submit
 	background: #9fc8c2
 	border: 1px solid #9fc8c2
