@@ -10,158 +10,159 @@
 <body>
 
   <div class="my_social">
-      <a href="https://www.linkedin.com/in/stewart-ilondanga-336b2743/" class="social">
-          <img src="https://i.imgsafe.org/85/857cb1a42e.png" alt="linkedin"></img>
-        </a>
-      <a href="https://stewilondanga.github.io/" class="social">
-          <img src="https://i.imgsafe.org/8d/8d745a5c82.png" alt="github"></img>
-        </a>
-      <a href="https://twitter.com/stew_ilondanga" class="social">
-          <img src="https://i.imgsafe.org/43/431dd07874.png" alt="twitter"></img>
-        </a>
+    <a href="https://www.linkedin.com/in/stewart-ilondanga-336b2743/" class="social">
+      <img src="https://i.imgsafe.org/85/857cb1a42e.png" alt="linkedin"></img>
+    </a>
+    <a href="https://stewilondanga.github.io/" class="social">
+      <img src="https://i.imgsafe.org/8d/8d745a5c82.png" alt="github"></img>
+    </a>
+    <a href="https://twitter.com/stew_ilondanga" class="social">
+      <img src="https://i.imgsafe.org/43/431dd07874.png" alt="twitter"></img>
+    </a>
+  </div>
+
+  <main class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1 id="title" class="header">
+          Survey Form
+        </h1>
+      </div>
     </div>
 
-    <main class="container">
-    	<div class="row">
-    		<div class="col-12">
-    			<h1 id="title" class="header">
-    				Survey Form
-    			</h1>
-    		</div>
-    	</div>
+    <div class="row d-flex justify-content-center">
+      <div class="form-area col-10">
+        <p class="text-center" id="description">Please fill in the form below, <span class="text-danger">*</span> means they are required. </p>
 
-    	<div class="row d-flex justify-content-center">
-    		<div class="form-area col-10">
-    				<p class="text-center" id="description">Please fill in the form below, <span class="text-danger">*</span> means they are required. </p>
+        <div class="form">
+          <form id="survey-form">
+            <div class="form-group">
+              <label for="name" id="name-label">Name<span class="text-danger">*</span></label>
+              <input type="text" class="form-control" id="name" aria-describedby="nameHelp" placeholder="Enter name..." required>
+              <small id="nameHelp" class="form-text text-muted">Pleace enter in your full name</small>
+            </div>
 
-    				<div class="form">
-    					<form id="survey-form">
-    						<div class="form-group">
-    							<label for="name" id="name-label">Name<span class="text-danger">*</span></label>
-    							<input type="text" class="form-control" id="name" aria-describedby="nameHelp" placeholder="Enter name..." required>
-    							<small id="nameHelp" class="form-text text-muted">Pleace enter in your full name</small>
-    						</div>
+            <div class="form-group">
+              <label for="email" id="email-label">Email<span class="text-danger">*</span></label>
+              <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email..." required>
+              <small id="nameHelp" class="form-text text-muted">Pleace enter in your email ex.example@gmail.com</small>
+            </div>
 
-    						<div class="form-group">
-    							<label for="email" id="email-label">Email<span class="text-danger">*</span></label>
-    							<input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email..." required>
-    							<small id="nameHelp" class="form-text text-muted">Pleace enter in your email ex.example@gmail.com</small>
-    						</div>
+            <div class="form-group">
+              <label for="number" id="number-label">Age<span class="text-danger">*</span></label>
+              <input type="number" class="form-control" id="number" aria-describedby="ageHelp" placeholder="Enter age..." min="1" max="125" required>
+              <small id="ageHelp" class="form-text text-muted">Pleace enter in your age</small>
+            </div>
 
-    						<div class="form-group">
-    							<label for="number" id="number-label">Age<span class="text-danger">*</span></label>
-    							<input type="number" class="form-control" id="number" aria-describedby="ageHelp" placeholder="Enter age..." min="1" max="125" required>
-    							<small id="ageHelp" class="form-text text-muted">Pleace enter in your age</small>
-    						</div>
+            <div class="form-group">
+              <label for="dropdown">Which option best describes your current role?</label>
+              <select id="dropdown" class="form-control">
+                <option value="0">Select an option...</option>
+                <option value="student">Student</option>
+                <option value="job">Full Time Job</option>
+                <option value="learner">Full Time Learner</option>
+                <option value="preferNo">Prefer not to say</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
 
-    						<div class="form-group">
-    							<label for="dropdown">Which option best describes your current role?</label>
-    							<select id="dropdown" class="form-control">
-    								<option value="0">Select an option...</option>
-    								<option value="student">Student</option>
-    								<option value="job">Full Time Job</option>
-    								<option value="learner">Full Time Learner</option>
-    								<option value="preferNo">Prefer not to say</option>
-    								<option value="other">Other</option>
-    							</select>
-    						</div>
+            <div class="form-group">
+              <label for="name" id="name-label">How likely is that you would recommend a career in development to a friend?<span class="text-danger">*</span></label>
 
-    						<div class="form-group">
-    							<label for="name" id="name-label">How likely is that you would recommend a career in development to a friend?<span class="text-danger">*</span></label>
+              <div class="">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="radio-buttons" id="definatly" value="1">
+                  <label class="form-check-label" for="definatly">Definitely</label>
+                </div>
 
-    							<div class="">
-    								<div class="form-check">
-    									<input class="form-check-input" type="radio" name="radio-buttons" id="definatly" value="1">
-    									<label class="form-check-label" for="definatly">Definitely</label>
-    								</div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="radio-buttons" id="maybe" value="2">
+                  <label class="form-check-label" for="maybe">Maybe</label>
+                </div>
 
-    								<div class="form-check">
-    									<input class="form-check-input" type="radio" name="radio-buttons" id="maybe" value="2">
-    									<label class="form-check-label" for="maybe">Maybe</label>
-    								</div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="radio-buttons" id="notsure" value="2">
+                  <label class="form-check-label" for="notsure">Not Sure</label>
+                </div>
+              </div>
+            </div>
 
-    								<div class="form-check">
-    									<input class="form-check-input" type="radio" name="radio-buttons" id="notsure" value="2">
-    									<label class="form-check-label" for="notsure">Not Sure</label>
-    								</div>
-    							</div>
-    						</div>
+            <div class="form-group">
+              <label for="dropdown2">What do you like most about development?</label>
+              <select id="dropdown2" class="form-control">
+                <option selected value="0">Select an option</option>
+                <option value="languages">Multitude of langueages to work with.</option>
+                <option value="pay">Pay</option>
+                <option value="community">Community</option>
+                <option value="openSource">Open Source Projects</option>
+              </select>
+            </div>
 
-    						<div class="form-group">
-    							<label for="dropdown2">What do you like most about development?</label>
-    							<select id="dropdown2" class="form-control">
-    								<option selected value="0">Select an option</option>
-    								<option value="languages">Multitude of langueages to work with.</option>
-    								<option value="pay">Pay</option>
-    								<option value="community">Community</option>
-    								<option value="openSource">Open Source Projects</option>
-    							</select>
-    						</div>
+            <div class="form-group">
+              <label id="name-label">
+                Which parts of developemnt do you prefer?
+                <small id="nameHelp" class="form-text text-muted">Pleace select all that apply</small>
+              </label>
 
-    						<div class="form-group">
-    							<label id="name-label">
-    								Which parts of developemnt do you prefer?
-    								<small id="nameHelp" class="form-text text-muted">Pleace select all that apply</small>
-    							</label>
+              <div class="">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="fullStack" value="1">
+                  <label class="form-check-label" for="fullStack">Full-Stack/Full-Stock Development</label>
+                </div>
 
-    							<div class="">
-    								<div class="form-check">
-    									<input class="form-check-input" type="checkbox" id="fullStack" value="1">
-    									<label class="form-check-label" for="fullStack">Full-Stack/Full-Stock Development</label>
-    								</div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="front" value="2">
+                  <label class="form-check-label" for="front">Front-End Development</label>
+                </div>
 
-    								<div class="form-check">
-    									<input class="form-check-input" type="checkbox" id="front" value="2">
-    									<label class="form-check-label" for="front">Front-End Development</label>
-    								</div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="back" value="3">
+                  <label class="form-check-label" for="back">Back-End Development</label>
+                </div>
 
-    								<div class="form-check">
-    									<input class="form-check-input" type="checkbox" id="back" value="3">
-    									<label class="form-check-label" for="back">Back-End Development</label>
-    								</div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="user" value="4">
+                  <label class="form-check-label" for="user">UI/UX Development</label>
+                </div>
 
-    								<div class="form-check">
-    									<input class="form-check-input" type="checkbox" id="user" value="4">
-    									<label class="form-check-label" for="user">UI/UX  Development</label>
-    								</div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="data" value="5">
+                  <label class="form-check-label" for="data">Database Managment</label>
+                </div>
 
-    								<div class="form-check">
-    									<input class="form-check-input" type="checkbox" id="data" value="5">
-    									<label class="form-check-label" for="data">Database Managment</label>
-    								</div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="qa" value="6">
+                  <label class="form-check-label" for="qa">QA Tester</label>
+                </div>
+              </div>
+            </div>
 
-    								<div class="form-check">
-    									<input class="form-check-input" type="checkbox" id="qa" value="6">
-    									<label class="form-check-label" for="qa">QA Tester</label>
-    								</div>
-    							</div>
-    						</div>
+            <div class="form-group">
+              <label for="comments">Any comments you would like to add?</label>
+              <textarea class="form-control" id="comments" rows="5"></textarea>
+            </div>
 
-    						<div class="form-group">
-    							<label for="comments">Any comments you would like to add?</label>
-        					<textarea class="form-control" id="comments" rows="5"></textarea>
-    						</div>
-
-    						<button class="btn-submit" id="submit">
-    							Submit
-    						</button>
-    					</form>
-    				</div>
-    			</div>
-    	</div>
-    </main>
+            <button class="btn-submit" id="submit">
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
 
   <section id="contact">
     <div class="overlay">
       <div class="containers">
 
         <h1>
-<script>
-with(new Date)c=-new Date(y=getFullYear(),m=getMonth()).getDay(x=new Date(y,++m,0).getDate(b=-1))
-h='<table class="cal"><caption> <em>Stewart ilondanga</em> &#169 '+' '+y+'/'+m+'<tr>'+'SuMoTuWeThFrSa'.replace(/(..)/g,'<th>$1')
-while((b++>5?b=0:b)|c<x)h+=(b?'':'<tr>')+'<td>'+(++c<1|c>x?'-':c);document.write(h+'</table>')
-</script>
-</h1>
+          <script>
+            with(new Date) c = -new Date(y = getFullYear(), m = getMonth()).getDay(x = new Date(y, ++m, 0).getDate(b = -1))
+            h = '<table class="cal"><caption> <em>Stewart ilondanga</em> &#169 ' + ' ' + y + '/' + m + '<tr>' + 'SuMoTuWeThFrSa'.replace(/(..)/g, '<th>$1')
+            while ((b++ > 5 ? b = 0 : b) | c < x) h += (b ? '' : '<tr>') + '<td>' + (++c < 1 | c > x ? '-' : c);
+            document.write(h + '</table>')
+          </script>
+        </h1>
 
       </div>
     </div>
