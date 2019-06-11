@@ -17,10 +17,11 @@ body {
   height: 1.5em;
 }
 
-/*
-textarea
-	resize: none
+textarea {
+  resize: none
+}
 
+/*
 .header
 	text-align: center
 	text-transform: uppercase
