@@ -34,22 +34,24 @@ textarea {
 }
 
 .btn-submit {
-	background: #9fc8c2;
-	border: 1px solid #9fc8c2;
-	color: #8b8285;
-	font-weight: bold;
+  background: #9fc8c2;
+  border: 1px solid #9fc8c2;
+  color: #8b8285;
+  font-weight: bold;
 }
+
 .form {
-	background: #fff;
-	padding: 20px;
-	border: 2px solid #f1d2cd;
+  background: #fff;
+  padding: 20px;
+  border: 2px solid #f1d2cd;
 }
-/*.containers {
+
+.containers {
   width: 520px;
   margin: 20px auto;
 }
 
-#contact h1 {
+/*#contact h1 {
   font-family: helvetica;
   font-weight: normal;
   text-align: center;
